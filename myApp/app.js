@@ -1,28 +1,31 @@
 'use strict';
 
-const queryOne = require('./query/findOne.js');
-const queryRegex = require('./query/regexQuery.js');
+const queryOne = require('./controller/findOne.js');
+const queryRegex = require('./controller/regexQuery.js');
 const express = require('express');
 const app = express();
 
-// NEEDS MVP IMPLEMENTED
 
 // 
-app.get('/api.domain.com/v1/word/:word', async function (req, res) {
+app.get('/api.domain.com/v1/words/:word', async function (req, res) {
   const word = req.params.word;
-  //console.log(word);
-  const result = await queryOne.findOne(word);
-  //console.log(result);
-  res.send(result);
-})
+  //console.log('Param: ', word);
+  let result = await queryOne.findOne(word);
+  //console.log('Result: ', result);
+  if (result.length === 0) res.status(404).send('Not Found');
+  else if (result === '500') res.status(500).send('Server Error');
+  else res.send(result);
+});
 
 // 
-app.get('/api.domain.com/v1/word/input/:chars', async function (req, res) {
+app.get('/api.domain.com/v1/words/input-chars/:chars', async function (req, res) {
   const chars = req.params.chars;
-  console.log(chars);
+  //console.log('Param: ', chars);
   const result = await queryRegex.regexQuery(chars);
-  console.log(result);
-  res.send(result);
-})
-  
+  //console.log('Result: ', result);
+  if (result.length === 0) res.status(404).send('Not Found');
+  else if (result === '500') res.status(500).send('Server Error');
+  else res.send(result);
+});
+
 app.listen(3000, () => console.log(`Example app listening on port 3000!`));
