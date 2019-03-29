@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.min.css"
+    media="screen,projection" />
+  <!-- Custom CSS-->
+  <link type="text/css" rel="stylesheet" href="../css/custom.css" media="screen,projection" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="container valign-wrapper">
+      <div class="row">
+        <h2 id="headerTitle" class="center-align">Dictionary</h2>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div class="input-field col l11 m10 s9">
+          <input id="autocomplete-input" class="autocomplete" type="text" placeholder="enter a word...">
+        </div>
+        <div id="searchDiv" class="input-field col l1 m2 s3">
+          <button id="search" type="submit" onclick="searchWordButton()" class="waves-effect blue accent-4">ADD</button>
+        </div>
+      </div>
+    </main>
+
+
+  </div>
+
+  <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('input.autocomplete').autocomplete({
+        data: {
+          "Apple": null,
+          "Microsoft": null,
+          "Google": 'https://placehold.it/250x250'
+        },
+      });
+    });
+  </script>
+</body>
+
+</html>
