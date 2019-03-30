@@ -3,6 +3,7 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
+// Connect to db class
 class ConnectDB {
 
   constructor() {

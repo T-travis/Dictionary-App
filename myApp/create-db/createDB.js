@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const { ConnectDB } = require("../config/conn.js");
-const { Entry } = require("../model/Entry.js");
+const { Entry } = require("../models/Entry.js");
 
 
 const createDB = async () => {
