@@ -3,7 +3,9 @@
 const wordDefinitionController = require('./controllers/wordDefinitionController');
 const regexWordMatchController = require('./controllers/regexWordMatchController');
 const express = require('express');
+const cors = require('cors');
 const app = express();
+app.use(cors());
 
 
 // search for "word" from path param 
@@ -27,5 +29,16 @@ app.get('/api.domain.com/v1/words/input-chars/:chars', async function (req, res)
   else if (result === '500') res.status(500).send('Server Error');
   else res.send(result);
 });
+
+//
+app.get('*', function (req, res) {
+  throw new Error("Bad Request");
+})
+
+app.use(function (err, req, res, next) {
+  if (err.message === "Bad Request") {
+    res.status(400).send("Bad Request: " + err.message);
+  }
+})
 
 app.listen(3000, () => console.log(`Example app listening on port 3000!`));

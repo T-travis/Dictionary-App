@@ -21,7 +21,7 @@ async function regexQuery(input) {
           $options: "i"
         }
       })
-      .limit(10)
+      .limit(4)
       .sort({
         word: 1
       })

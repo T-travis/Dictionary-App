@@ -1,14 +1,18 @@
 const { ConnectDB } = require("../config/conn.js");
 const { Entry } = require("./Entry.js");
 
+
 /* Find one item in db by "word" attribute */
 async function findOne(seachWord) {
-  // connect to db
+  // init db conn object
   const conn = new ConnectDB();
-  conn.connect();
+  // result will be either a error status code or db findOne result
   let result;
   // search for "searchWord" in db
   try {
+    // connect to db
+    conn.connect();
+    // search db for searchWord
     result = await Entry.findOne({
       word: seachWord
     })

@@ -16,7 +16,10 @@ class ConnectDB {
         useNewUrlParser: true
       })
       .then(() => console.log("connected..."))
-      .catch(() => console.log("connection ERROR"));
+      .catch((err) => {
+        console.log("connection ERROR");
+        process.exit(0);
+      });
   }
 
   disconnect() {
