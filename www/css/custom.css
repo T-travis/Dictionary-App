@@ -1,0 +1,118 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 7rem !important;
+  min-width: 100%;
+  color: white;
+  margin: 0 0 1rem 0;
+}
+
+#headerTitle {
+  color: white;
+  font-weight: bold;
+}
+
+#opening {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left-color: black;
+}
+
+blockquote a {
+  font-weight: bold;
+  margin-left: .6em;
+  color: #2962ff;
+}
+
+main {
+  min-width: 100%;
+
+}
+
+
+
+#word {
+  margin-left: .8em;
+  font-size: 1.4em;
+}
+
+#wordTitle {
+  display: inline-block;
+}
+
+#definition {
+  margin-left: .8em;
+  font-size: 1.4em;
+  padding-bottom: 4rem;
+}
+
+#definitionTitle {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+#wordSearchSection {
+  margin-bottom: 0rem;
+}
+
+.search {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  height: 2em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#searchDiv {}
+
+input {
+  text-indent: .5em;
+}
+
+#autocomplete-input {
+  margin-left: 0px !important;
+  border: 0.1em solid white;
+  border-radius: .5em;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* override materializecss */
+.autocomplete-content {
+  min-width: auto !important;
+  argin-left: 0px !important;
+}
+
+ul.dropdown-content {
+  overflow: auto;
+}
+
+
+/* http error message colors   margin-right: .3em;
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/** change widths for mobile **/
+@media only screen and (max-width: 600px) {
+  #mainContainer {
+    width: 100% !important;
+  }
+
+  header #headerTitle {
+    font-size: 3rem;
+  }
+}
