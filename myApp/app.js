@@ -31,13 +31,22 @@ app.get('/api.domain.com/v1/words/input-chars/:chars', async function (req, res)
 });
 
 // catches all other urls not specified and throws an error
-app.get('*', function (req, res) {
+app.all('*', function (req, res) {
   throw new Error("Bad Request");
 })
 // handles error thrown
 app.use(function (err, req, res, next) {
-  if (err.message === "Bad Request") {
-    res.status(400).send("Bad Request: " + err.message);
+  const method = req.method; // get method request type
+  // only GET is allowed
+  if (method !== 'GET') {
+    console.log(err.message)
+    const html = '<h1>405</h1><h3>' + method + ' method not allowed</h3>';
+    res.status(405).send(html);
+  }
+  // wrong url path
+  else if (err.message === "Bad Request") {
+    const html = '<h1>400</h1><h3>' + err.message + '</h3>';
+    res.status(400).send(html);
   }
 })
 
