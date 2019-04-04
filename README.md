@@ -5,12 +5,12 @@ quite a bit more to say the least.  The dictionary is based on this repo [matthe
 which contains Webster's Unabridged English Dictionary (from the Gutenberg Project, compiled August 22, 2009).
 
 ## Contents
-*![Something](https://github.com/T-travis/Dictionary-API-App/README.md/Something)
+*[Architecture](https://github.com/T-travis/Dictionary-API-App/blob/master/README.md#something)
 
 ## Check it out:
 ![demo](https://github.com/T-travis/Dictionary-API-App/blob/master/www/images/demo.png)
 
-## Something
+## Architecture
 
 
 
