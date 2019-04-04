@@ -6,30 +6,30 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 
 <br />
 
-## Contents
+# Contents
 * [Demo Image](https://github.com/T-travis/Dictionary-App/blob/master/README.md#demo-image)
-* [Architecture](https://github.com/T-travis/Dictionary-App/blob/master/README.md#architecture)
+* [Architecture and Api Design](https://github.com/T-travis/Dictionary-App/blob/master/README.md#architecture-and-api-design)
 * [Built With](https://github.com/T-travis/Dictionary-App/blob/master/README.md#built-with)
 * [Steps to Deploy](https://github.com/T-travis/Dictionary-App/blob/master/README.md#steps-to-deploy)
 
 <br />
 
-## Demo Image
+# Demo Image
 ![demo](https://github.com/T-travis/Dictionary-App/blob/master/www/images/demo.png)
 
 <br />
 
-## Architecture
-![api](https://github.com/T-travis/Dictionary-App/blob/master/www/images/api.png)
+# Architecture and Api Design
 ![architecture](https://github.com/T-travis/Dictionary-App/blob/master/www/images/dictionary-app.png)
+![api](https://github.com/T-travis/Dictionary-App/blob/master/www/images/api.png)
 
 <br />
 
-## Built With
+# Built With
 
 <br />
 
-## Steps to Deploy
+# Steps to Deploy
 
 
 
