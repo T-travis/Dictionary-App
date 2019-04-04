@@ -31,13 +31,13 @@ async function regexQuery(input) {
       });
   } catch (err) {
     // catch server error with 500 status code
-    console.log("ERROR: ", err);
+    //console.log("ERROR: ", err);
     result = '500';
   }
   //console.log('Result: ', result);
   // end db connection
   conn.disconnect(() => {
-    console.log('disconnected from db...')
+    //console.log('disconnected from db...')
   });
   // return results to controller
   return result;

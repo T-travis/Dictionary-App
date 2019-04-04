@@ -22,12 +22,12 @@ async function findOne(seachWord) {
     //console.log('Result: ', result);
   } catch (err) {
     // catch server error with 500 status code
-    console.log("ERROR: ", err);
+    //console.log("ERROR: ", err);
     result = '500';
   }
   // end db connection
   conn.disconnect(() => {
-    console.log('disconnected from db...')
+    //console.log('disconnected from db...')
   });
   // return result to controller
   return result;
