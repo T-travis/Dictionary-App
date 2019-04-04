@@ -14,6 +14,9 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 ![demo](https://github.com/T-travis/Dictionary-App/blob/master/www/images/demo.png)
 
 ## Architecture
+![api](https://github.com/T-travis/Dictionary-App/blob/master/www/images/api.png)
+![architecture](https://github.com/T-travis/Dictionary-App/blob/master/www/images/dictionary-app.png)
+
 
 ## Built With
 
