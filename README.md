@@ -6,7 +6,7 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 
 ## Contents
 * [Architecture](https://github.com/T-travis/Dictionary-API-App/blob/master/README.md#architecture)
-* [Built With](https://github.com/T-travis/Dictionary-API-App/blob/master/README.md#architecture)
+* [Built With](https://github.com/T-travis/Dictionary-API-App/blob/master/README.md#built-with)
 * [Steps to Setup/Reproduce](https://github.com/T-travis/Dictionary-API-App/blob/master/README.md#architecture)
 
 ## Check it out:
@@ -16,7 +16,7 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 
 ## Built With
 
-## Steps to Setup/Reproduce
+## Steps to Deploy
 
 
 
