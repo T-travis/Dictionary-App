@@ -1,10 +1,14 @@
 "use strict";
 
 const fs = require("fs");
-const { ConnectDB } = require("../config/conn.js");
-const { Entry } = require("../models/Entry.js");
+const {
+	ConnectDB
+} = require("../config/conn.js");
+const {
+	Entry
+} = require("../models/Entry.js");
 
-
+/* creates the db from file */
 const createDB = async () => {
 	let rawdata = fs.readFileSync("./dictionary_alpha_arrays.json");
 	let dictionary = JSON.parse(rawdata);
@@ -52,8 +56,8 @@ async function write(array) {
 // sort array by "word" attribute using comparator
 function sort(array) {
 	array.sort(function (a, b) {
-		const wordA = a.word.toUpperCase(); // ignore upper and lowercase
-		const wordB = b.word.toUpperCase(); // ignore upper and lowercase
+		const wordA = a.word.toLowerCase(); // ignore upper and lowercase
+		const wordB = b.word.toLowerCase(); // ignore upper and lowercase
 		if (wordA < wordB) {
 			return -1;
 		}

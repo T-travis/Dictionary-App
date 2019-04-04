@@ -15,19 +15,20 @@ class ConnectDB {
       .connect("mongodb://localhost/dictionary", {
         useNewUrlParser: true
       })
-      .then(() => console.log("connected..."))
+      .then(() => {
+        //console.log("connected...")
+      })
       .catch((err) => {
-        console.log("connection ERROR");
+        //console.log("connection ERROR");
         process.exit(0);
       });
   }
 
   disconnect() {
     this.mongoose.disconnect(() => {
-      console.log('disconnected from db...')
+      //console.log('disconnected from db...')
     });
   }
 }
 
 module.exports.ConnectDB = ConnectDB;
-

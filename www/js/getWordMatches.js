@@ -8,7 +8,7 @@ async function getCharMatches(chars) {
     const results = await axios.get(`http://localhost:3000/api.domain.com/v1/words/input-chars/${chars}`);
     return results;
   } catch (error) {
-    console.log("error");
+    //console.log("error");
     return error;
   }
 }
@@ -21,8 +21,6 @@ $(document).ready(function () {
 
   // jquery version
   $('#autocomplete-input').on('input', async function (e) {
-
-    //console.log($(this).val()) // get the current value of the input field.
 
     // get matches for current char entered into input
     const results = await getCharMatches(this.value);

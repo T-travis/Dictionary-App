@@ -34,8 +34,6 @@ main {
 
 }
 
-
-
 #word {
   margin-left: .8em;
   font-size: 1.4em;
@@ -89,15 +87,21 @@ input {
 /* override materializecss */
 .autocomplete-content {
   min-width: auto !important;
-  argin-left: 0px !important;
+  margin-left: 0px !important;
 }
 
 ul.dropdown-content {
   overflow: auto;
+  margin-left: 0px !important;
+  border: 0.1em solid white;
+  border-radius: .5em;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-/* http error message colors   margin-right: .3em;
+/* http error message colors */
 .red {
   background-color: red;
 }

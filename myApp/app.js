@@ -30,11 +30,11 @@ app.get('/api.domain.com/v1/words/input-chars/:chars', async function (req, res)
   else res.send(result);
 });
 
-//
+// catches all other urls not specified and throws an error
 app.get('*', function (req, res) {
   throw new Error("Bad Request");
 })
-
+// handles error thrown
 app.use(function (err, req, res, next) {
   if (err.message === "Bad Request") {
     res.status(400).send("Bad Request: " + err.message);
