@@ -44,24 +44,24 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 
 # Steps to Deploy 
 1) spin up an Ubuntu EC2 instance
-2) update the EC2
-   `sudo apt update`
+2) update the EC2 <br />
+   `sudo apt update` <br />
    `sudo apt upgrade`
-3) install Nginx
+3) install Nginx <br />
    `sudo apt install nginx`
-4) check install of nginx and start it
-   `sudo systemctl status nginx`
+4) check install of nginx and start it <br />
+   `sudo systemctl status nginx` <br />
    `sudo systemctl start nginx`
-5) we also want nginx to start on startup
+5) we also want nginx to start on startup <br />
    `sudo systemctl enable nginx`
-6) install node.js and npm
-   `sudo apt install nodejs`
+6) install node.js and npm <br />
+   `sudo apt install nodejs` <br />
    I recommend installing nodejs-legacy as well (this just contains the symlink so you can use the node command,
    see this link: [stackoverflow](https://stackoverflow.com/questions/20057790/what-are-the-differences-between-node-js-and-node))
-   `sudo apt install nodejs-legacy`
+   `sudo apt install nodejs-legacy` <br />
    `sudo apt install npm`
-   and check their install:
-   `node -v`
+   and check their install: <br />
+   `node -v` <br />
    `nmp -v`
    `
 
