@@ -63,7 +63,8 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
    and check their install: <br />
    `node -v` <br />
    `nmp -v`
-   `
+7) setup Nginx to serve static html, reverse proxy for node application, and rewrite domain.com to www.domain.com
+   and api.domain.com to www.api.domain.com
 
 
 
