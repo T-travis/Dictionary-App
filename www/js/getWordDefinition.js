@@ -4,7 +4,7 @@
 async function getWordDef(input) {
   try {
     input = input.toLowerCase(); // make lowercase for matching in db
-    const results = await axios.get(`*******************************`);
+    const results = await axios.get(`**********************`);
     return results;
   } catch (error) {
     return error;

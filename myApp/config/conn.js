@@ -12,7 +12,7 @@ class ConnectDB {
 
   connect() {
     this.mongoose
-      .connect("mongodb://localhost/dictionary", {
+      .connect("**********************", {
         useNewUrlParser: true
       })
       .then(() => {
