@@ -26,6 +26,12 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 <br />
 
 # Built With
+### Front-End             ### Back-End
+* JavaScript              * Node.js
+* Materialize             * Express.js
+* HTML                    * Nginx
+* CSS                     * MongoDB
+* Axios.js                * Mongoose  
 
 <br />
 
