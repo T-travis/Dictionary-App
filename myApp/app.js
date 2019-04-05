@@ -9,7 +9,7 @@ app.use(cors());
 
 
 // search for "word" from path param 
-app.get('/api.domain.com/v1/words/:word', async function (req, res) {
+app.get('/www.api.brokenprogrammer.com/v1/words/:word', async function (req, res) {
   const word = req.params.word;
   //console.log('Param: ', word);
   let result = await wordDefinitionController.findOne(word);
@@ -20,7 +20,7 @@ app.get('/api.domain.com/v1/words/:word', async function (req, res) {
 });
 
 // use "chars" from path param to find next 10 words related
-app.get('/api.domain.com/v1/words/input-chars/:chars', async function (req, res) {
+app.get('/www.api.brokenprogrammer.com/v1/words/input-chars/:chars', async function (req, res) {
   const chars = req.params.chars;
   //console.log('Param: ', chars);
   const result = await regexWordMatchController.regexQuery(chars);
@@ -50,4 +50,4 @@ app.use(function (err, req, res, next) {
   }
 })
 
-app.listen(3000, () => console.log(`Example app listening on port 3000!`));
+app.listen(8080, "172.31.30.173");

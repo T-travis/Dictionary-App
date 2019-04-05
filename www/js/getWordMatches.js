@@ -5,7 +5,7 @@
 async function getCharMatches(chars) {
   try {
     chars = chars.toLowerCase();
-    const results = await axios.get(`http://localhost:3000/api.domain.com/v1/words/input-chars/${chars}`);
+    const results = await axios.get(`http://www.api.brokenprogrammer.com/v1/words/input-chars/${chars}`);
     return results;
   } catch (error) {
     //console.log("error");
