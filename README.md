@@ -15,13 +15,13 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 <br />
 
 # Demo Image
-![demo](https://github.com/T-travis/Dictionary-App/blob/master/www/images/demo.png)
+![demo](https://github.com/T-travis/Dictionary-App/blob/master/images/demo.png)
 
 <br />
 
 # Architecture and Api Design
-![architecture](https://github.com/T-travis/Dictionary-App/blob/master/www/images/dictionary-app.png)
-![api](https://github.com/T-travis/Dictionary-App/blob/master/www/images/api.png)
+![architecture](https://github.com/T-travis/Dictionary-App/blob/master/images/dictionary-app.png)
+![api](https://github.com/T-travis/Dictionary-App/blob/master/images/api.png)
 
 <br />
 
@@ -65,5 +65,5 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
    `nmp -v`
 7) setup Nginx to serve static html or reverse proxy for node application
 
-
+*** in progress
 
