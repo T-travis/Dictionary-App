@@ -12,7 +12,11 @@ class ConnectDB {
 
   connect() {
     this.mongoose
+<<<<<<< HEAD
       .connect("**********************", {
+=======
+      .connect("mongodb://appuser:7531ttt@localhost:27017/dictionary", {
+>>>>>>> prod
         useNewUrlParser: true
       })
       .then(() => {

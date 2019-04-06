@@ -1,12 +1,8 @@
 "use strict";
 
 const fs = require("fs");
-const {
-	ConnectDB
-} = require("../config/conn.js");
-const {
-	Entry
-} = require("../models/Entry.js");
+const {	ConnectDB } = require("../config/conn.js");
+const {	Entry } = require("../models/Entry.js");
 
 /* creates the db from file */
 const createDB = async () => {

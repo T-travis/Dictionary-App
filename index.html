@@ -11,7 +11,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="../myApp/node_modules/materialize-css/dist/css/materialize.min.css"
+  <link type="text/css" rel="stylesheet" href="./myApp/node_modules/materialize-css/dist/css/materialize.min.css"
     media="screen,projection" />
   <!-- Custom CSS-->
   <link type="text/css" rel="stylesheet" href="./css/custom.css" media="screen,projection" />
@@ -34,23 +34,28 @@
         <div class="col l12 m12 s12">
           <blockquote>
             <h6>Built with: &nbsp; AWS EC2, Nginx, Node.js, Express.js, Materialize, and more. Check it out here: <a
-                href="">GitHub</a></h6>
+                href="https://github.com/T-travis/Dictionary-App" target="_blank">GitHub</a></h6>
           </blockquote>
         </div>
       </div>
 
       <!-- word search section -->
-      <div id="wordSearchSection" class="row">
-        <div class="input-field col l10 m10 s12">
-          <input id="autocomplete-input" class="autocomplete" type="text" placeholder="enter a word...">
-        </div>
-        <div id="searchDiv" class="input-field col l2 m2 hide-on-small-only">
-          <button type="submit" class="waves-effect blue accent-4 search">Search</button>
-        </div>
-        <!-- button for mobile devices is on its own row-->
+      <div id="wordSearchSection">
         <div class="row">
-          <div id="searchDiv" class="input-field col s12 center hide-on-med-and-up">
+          <div class="input-field col l10 m10 hide-on-small-only">
+            <input id="autocomplete-input" class="autocomplete" type="text" placeholder="enter a word...">
+          </div>
+          <div id="searchDiv" class="input-field col l2 m2 hide-on-small-only">
             <button type="submit" class="waves-effect blue accent-4 search">Search</button>
+          </div>
+        </div>
+        <!-- section for mobile devices is on its own row-->
+        <div class="row">
+          <div class="input-field col s12 hide-on-med-and-up">
+            <input id="autocomplete-inputMobile" class="" type="text" placeholder="enter a word...">
+          </div>
+          <div id="searchDiv" class="input-field col s12 center hide-on-med-and-up">
+            <button type="submit" class="waves-effect blue accent-4 searchMobile">Search</button>
           </div>
         </div>
       </div>
@@ -82,9 +87,9 @@
   </div>
 
   <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="../myApp/node_modules/jquery/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="../myApp/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="../myApp/node_modules/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="./myApp/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./myApp/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="./myApp/node_modules/axios/dist/axios.min.js"></script>
   <script src="./js/getWordDefinition.js"></script>
   <script src="./js/getWordMatches.js"></script>
 
