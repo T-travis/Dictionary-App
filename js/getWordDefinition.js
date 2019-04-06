@@ -57,10 +57,11 @@ $('.search').click(async function () {
   // validate input and handle results
   if (validate(input)) {
     const results = await getWordDef(input);
+    //console.log(results);
     // if response then there is an error
     if (results.response) {
       // set html tags for error
-      //console.log(results.response.status);
+      //console.log(results.response);
       const status = results.response.status;
       handleErrorMessage(status);
     } else if (results.data) {
@@ -76,4 +77,45 @@ $('.search').click(async function () {
       handleErrorMessage(500);
     }
   }
+
+  
+});
+
+
+// handle click events of the search button
+$('.searchMobile').click(async function () {
+  // hide error section
+  $('#errorSection').hide();
+  // clear search word
+  $('#word').text("");
+  // clear definition
+  $('#definition').text("");
+  // get input from user
+  let input = $("#autocomplete-inputMobile").val();
+  $("#autocomplete-inputMobile").val("");
+  // validate input and handle results
+  if (validate(input)) {
+    const results = await getWordDef(input);
+    //console.log(results);
+    // if response then there is an error
+    if (results.response) {
+      // set html tags for error
+      //console.log(results.response);
+      const status = results.response.status;
+      handleErrorMessage(status);
+    } else if (results.data) {
+      // set html tags for success
+      //console.log(results.data);
+      // add word to span
+      $('#word').text(results.data.word);
+      // add definition to span
+      $('#definition').text(results.data.definition);
+    } else {
+      // 500 can be found above in results.response but if the db goes down
+      // this will be triggered 
+      handleErrorMessage(500);
+    }
+  }
+
+
 });
