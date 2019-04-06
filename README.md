@@ -65,5 +65,5 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
    `nmp -v`
 7) setup Nginx to serve static html or reverse proxy for node application
 
-
+*** in progress
 
