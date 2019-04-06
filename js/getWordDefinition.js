@@ -78,7 +78,7 @@ $('.search').click(async function () {
     }
   }
 
-  
+
 });
 
 
@@ -117,5 +117,5 @@ $('.searchMobile').click(async function () {
     }
   }
 
-  
+
 });
