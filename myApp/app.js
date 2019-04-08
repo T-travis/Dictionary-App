@@ -5,7 +5,10 @@ const regexWordMatchController = require('./controllers/regexWordMatchController
 const express = require('express');
 const cors = require('cors');
 const app = express();
-app.use(cors());
+// allow only these domains to access api
+app.use(cors({
+  origin: 'http://****************'
+}));
 
 
 // search for "word" from path param 
