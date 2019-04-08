@@ -55,7 +55,8 @@ which contains Webster's Unabridged English Dictionary (from the Gutenberg Proje
 5) we also want nginx to start on startup <br />
    `sudo systemctl enable nginx`
 6) install node.js and npm <br />
-   `sudo apt install nodejs` <br />
+   `curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -`<br />
+   `sudo apt-get install -y nodejs` <br />
    I recommend installing nodejs-legacy as well (this just contains the symlink so you can use the node command,
    see this link: [stackoverflow](https://stackoverflow.com/questions/20057790/what-are-the-differences-between-node-js-and-node))
    `sudo apt install nodejs-legacy` <br />
