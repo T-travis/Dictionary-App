@@ -1,5 +1,5 @@
 # Dictionary-App
-What is this app?  A simple English dictionary web application.  I designed this application to gain experience making 
+This is a simple English dictionary web application.  I designed this application to gain experience making 
 a RESTful API, along with gaining experience using Nginx, Node.js, Express.js, MongoDB, Mongoose, AWS EC2, and ended 
 up learning quite a bit more to say the least.  The dictionary is based on this repo [matthewreagan/WebstersEnglishDictionary](https://github.com/matthewreagan/WebstersEnglishDictionary) which contains 
 Webster's Unabridged English Dictionary (from the Gutenberg Project, compiled August 22, 2009).
